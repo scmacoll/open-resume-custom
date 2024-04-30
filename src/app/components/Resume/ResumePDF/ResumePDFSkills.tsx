@@ -58,7 +58,7 @@ export const ResumePDFSkills = ({
       <View style={{ ...styles.flexCol }}>
         <ResumePDFBulletList
           items={descriptions}
-          showBulletPoints={showBulletPoints}
+          showBulletPoints={false}
         />
       </View>
     </ResumePDFSection>
