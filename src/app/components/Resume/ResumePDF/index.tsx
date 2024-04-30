@@ -47,7 +47,8 @@ export const ResumePDF = ({
     formsOrder,
     showBulletPoints,
   } = settings;
-  const themeColor = settings.themeColor || DEFAULT_FONT_COLOR;
+  // const themeColor = settings.themeColor || DEFAULT_FONT_COLOR;
+  const themeColor = "#000000";
 
   const showFormsOrder = formsOrder.filter((form) => formToShow[form]);
 
@@ -109,7 +110,8 @@ export const ResumePDF = ({
               style={{
                 width: spacing["full"],
                 height: spacing[3.5],
-                backgroundColor: themeColor,
+                // changed themeColor to transparent
+                backgroundColor: "transparent",
               }}
             />
           )}

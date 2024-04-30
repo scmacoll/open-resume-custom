@@ -28,11 +28,15 @@ export const ResumePDFProfile = ({
       <ResumePDFText
         bold={true}
         themeColor={themeColor}
-        style={{ fontSize: "20pt" }}
+        style={{ fontSize: "20pt", textAlign: "center" }}
       >
         {name}
       </ResumePDFText>
-      {summary && <ResumePDFText>{summary}</ResumePDFText>}
+      {summary && <ResumePDFText
+        style={{  textAlign: "center" }}
+      >
+        {summary}
+      </ResumePDFText>}
       <View
         style={{
           ...styles.flexRowBetween,
